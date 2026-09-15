@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #99581d;
+  background-color: #bdf4f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  background-color: #0e1527;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: #ddd7fd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: inset 0 0 0 0 #99581d;
+  margin: 0 -0.25rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+nav a:hover {
+  box-shadow: inset 0 -3px 0 0 #99581d;
+  color: white;
+}
+
+.home__Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.home__Container .home__Hero {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 11/2;
+  background-image: url(../images/singaporeHero.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.home__Container .home__Title {
+  padding-top: 30px;
+}
+.home__Container .home__Text {
+  background-color: #bdf4f8;
+  width: 100%;
+  padding: 20px 80px;
+  margin: 0 auto;
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+.about__image img {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #99581d;
+  box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+}
+
+.about__container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto;
+  box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+}
+.about__container .about__text {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about__container .about__text h1 {
+  color: #dda681;
+}
+
+.packages__hero {
+  background-image: url(../images/walking.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  width: 100%;
+}
+
+.packages__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px 80px;
+  gap: 2rem;
+}
+.packages__container .packages__card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+}
+.packages__container .packages__card .card__imgHolder {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+}
+.packages__container .packages__card .card__imgHolder.card--imgVIP {
+  background-image: url(../images/financialDistricctAbove.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.packages__container .packages__card .card__imgHolder.card--imgFood {
+  background-image: url(../images/nightFoodStalls.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.packages__container .packages__card .card__imgHolder.card--imgNature {
+  background-image: url(../images/gardensByBay.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.packages__container .packages__card .card__imgHolder.card--imgCulture {
+  background-image: url(../images/masjidSultan.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.packages__container .packages__card .card__textHolder {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.packages__container .packages__card .card__textHolder h1 {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  white-space: nowrap;
+}
+.packages__container .packages__card button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 0 #99581d;
+  margin: 0 -0.25rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.packages__container .packages__card button:hover {
+  box-shadow: inset 0 -3px 0 0 #99581d;
+  color: black;
+}

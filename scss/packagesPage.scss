@@ -1,0 +1,96 @@
+.packages__hero {
+  background-image: url(../images/walking.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+  width: 100%;
+}
+.packages__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px 80px;
+  gap: 2rem;
+
+  .packages__card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+    .card__imgHolder {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+      &.card--imgVIP {
+        background-image: url(../images/financialDistricctAbove.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &.card--imgFood {
+        background-image: url(../images/nightFoodStalls.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &.card--imgNature {
+        background-image: url(../images/gardensByBay.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &.card--imgCulture {
+        background-image: url(../images/masjidSultan.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .card__textHolder {
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+
+      h1 {
+        text-align: center;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        white-space: nowrap;
+      }
+    }
+    button {
+      border: none;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+
+      box-shadow: inset 0 0 0 0 $--secondaryDarkColor;
+
+      margin: 0 -0.25rem;
+      padding: 0.5rem 1rem;
+      transition:
+        color 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: inset 0 -3px 0 0 $--secondaryDarkColor;
+        color: black;
+      }
+    }
+  }
+}

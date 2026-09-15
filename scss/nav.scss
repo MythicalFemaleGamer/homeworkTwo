@@ -1,0 +1,27 @@
+nav {
+  background-color: $--primaryDarkColor;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    color: #ddd7fd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    box-shadow: inset 0 0 0 0 $--secondaryDarkColor;
+
+    margin: 0 -0.25rem;
+    padding: 0.5rem 1rem;
+    transition:
+      color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: inset 0 -3px 0 0 $--secondaryDarkColor;
+      color: white;
+    }
+  }
+}
